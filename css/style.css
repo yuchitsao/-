@@ -1,0 +1,254 @@
+     * {
+         padding: 0;
+         margin: 0;
+     }
+     
+     body {
+         background: rgba(212, 201, 255, 0.536);
+     }
+     /* 白色的框框 */
+     
+     .wrap {
+         background: #fff;
+         width: 900px;
+         margin: 40px auto;
+         padding: 40px;
+         box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+     }
+     
+     .wrap h2 {
+         color: rgba(123, 90, 255, 0.732);
+         ;
+         font-size: 19px;
+         margin-bottom: 10px;
+         padding-bottom: 8px;
+         border-bottom: 1px dotted #fed48b;
+     }
+     
+     .wrap h2 span {
+         color: rgba(119, 85, 255, 0.474);
+         ;
+         font-size: 15px;
+         ;
+     }
+     
+     .wrap h2 span:before {
+         content: "/";
+         margin-right: 3px;
+     }
+     
+     .wrap ul {
+         list-style: none;
+     }
+     /* 基本資料 */
+     
+     .profile {
+         background: rgb(255, 250, 215);
+         overflow: hidden;
+         padding: 20px;
+         margin-bottom: 40px;
+         border-radius: 10px;
+     }
+     
+     .profile .left {
+         width: 50%;
+         float: left;
+         margin-right: 10%;
+     }
+     
+     .profile .left img {
+         width: 100%;
+         border-radius: 10px;
+     }
+     
+     .profile .right {}
+     
+     .profile .right h1.name {
+         font-size: 20px;
+         margin-bottom: 80px;
+         padding-top: 80px;
+         color: #2a085de2;
+     }
+     
+     .profile .right .info {
+         font-size: 14px;
+         margin-bottom: 30px;
+         line-height: 180%;
+         color: #6e2dceb5;
+     }
+     
+     .profile .right .link {
+         margin-bottom: 30px;
+     }
+     
+     .profile .right .link a {
+         display: inline-block;
+         width: 24px;
+         height: 24px;
+         opacity: 1;
+         transition: opacity .5s;
+     }
+     
+     .profile .right .link a:hover {
+         opacity: .5;
+     }
+     
+     .profile .right .link a img {
+         width: 24px;
+         height: 24px;
+     }
+     
+     .profile .right .mail {
+         font-size: 14px;
+         margin-bottom: 10px;
+     }
+     
+     .profile .right .mail::before {
+         content: "E";
+         font-weight: bold;
+         color: #6600ff;
+     }
+     
+     .profile .right .mail a {
+         color: rgba(128, 96, 255, 0.911);
+     }
+     
+     .profile .right .mail a:hover {
+         text-decoration: none;
+         color: rgb(255, 181, 70);
+     }
+     
+     .profile .right .phone {
+         font-size: 14px;
+         color: rgba(128, 96, 255, 0.911);
+     }
+     
+     .profile .right .phone::before {
+         content: "P";
+         font-weight: bold;
+         color: #6600ff;
+     }
+     /* 技能 */
+     
+     .skill {
+         overflow: hidden;
+         margin-bottom: 40px;
+     }
+     
+     .skill ul {
+         font-size: 14px;
+     }
+     
+     .skill ul li {
+         width: 30%;
+         float: left;
+         margin-right: 5%;
+         margin-bottom: 8px;
+     }
+     
+     .skill ul li::before {
+         content: "✦";
+         margin-right: 8px;
+         color: #6600ff;
+     }
+     
+     .skill ul li:nth-child(3n) {
+         margin-right: 0;
+     }
+     
+     .skill ul li span {
+         margin-left: 8px;
+         color: rgba(128, 96, 255, 0.911);
+         font-style: italic;
+     }
+     /* 經歷 */
+     
+     .experience {
+         overflow: hidden;
+         margin-bottom: 40px;
+     }
+     
+     .experience .leftB {
+         float: left;
+         width: 48%;
+         margin-right: 3%;
+         padding-left: 8px;
+     }
+     
+     .experience .rightB {
+         float: left;
+         width: 48%;
+     }
+     
+     .experience ul {
+         font-size: 14px;
+         border-left: 2px dotted rgba(164, 141, 254, 0.911);
+     }
+     
+     .experience ul li {
+         margin-bottom: 30px;
+         padding-left: 60px;
+         position: relative;
+     }
+     
+     .experience ul li::before {
+         content: "✦";
+         position: absolute;
+         left: -6.5px;
+         top: 4px;
+         color: #6600ff;
+     }
+     
+     .experience ul li span {
+         display: block;
+         font-size: 12px;
+         color: rgba(132, 101, 255, 0.755);
+         padding-top: 10px;
+     }
+     /* 作品 */
+     
+     .work {
+         overflow: hidden;
+     }
+     
+     .work ul {}
+     
+     .work ul li {
+         width: 32%;
+         height: 180px;
+         float: left;
+         margin-right: 2%;
+         margin-bottom: 20px;
+         overflow: hidden;
+         position: relative;
+         border-radius: 10px;
+     }
+     
+     .work ul li:nth-child(3n) {
+         margin-right: 0;
+     }
+     
+     .work ul li img {
+         width: 100%;
+         transform: scale(1);
+         transition: all 1s;
+     }
+     
+     .work ul li:hover img {
+         transform: scale(1.2);
+     }
+     
+     .work ul li .text {
+         width: 100%;
+         position: absolute;
+         bottom: -40px;
+         padding: 8px;
+         box-sizing: border-box;
+         background: rgba(0, 0, 0, .2);
+         color: rgb(228, 228, 228);
+         transition: all 1s;
+     }
+     
+     .work ul li:hover .text {
+         bottom: 0;
+     }
